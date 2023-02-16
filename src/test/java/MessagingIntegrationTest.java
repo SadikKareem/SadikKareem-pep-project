@@ -33,6 +33,7 @@ public class MessagingIntegrationTest {
     ObjectMapper objectMapper;
     HttpClient webClient;
     Javalin app;
+    
     /**
      * Before every test, reset the database, restart the Javalin app, and create a new webClient and ObjectMapper
      * for interacting locally on the web.
@@ -52,6 +53,7 @@ public class MessagingIntegrationTest {
     public void tearDown() {
         app.stop();
     }
+    
 
     /**
      * Calling GET localhost:8080/messages when there are no messages (empty database) should return an empty list with

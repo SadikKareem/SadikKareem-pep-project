@@ -49,6 +49,7 @@ public class AuthIntegrationTest {
     public void tearDown() {
         app.stop();
     }
+    
 
     /**
      * Calling POST localhost:8080/register when there are no users (empty database) with a body representing a valid
